@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-22T15:44:50.005036" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Division" source="C:\Users\sguiheux2023\PycharmProjects\formation_robot\test_division.robot">
+<test id="s1-t1" name="test nombre decimal" line="16">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-22T15:44:50.034842" level="INFO">${result} = 5.18</msg>
+<var>${result}</var>
+<arg>round(${diviseur}/${numerateur}, 2)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-22T15:44:50.034842" elapsed="0.001019"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-22T15:44:50.035861" level="INFO">Starting process:
+python division.py 36.8 7.1</msg>
+<msg time="2024-02-22T15:44:50.038956" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-22T15:44:50.092480" level="INFO">Process completed.</msg>
+<msg time="2024-02-22T15:44:50.092480" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${diviseur}</arg>
+<arg>${numerateur}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-22T15:44:50.035861" elapsed="0.056619"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-02-22T15:44:50.094536" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'float'&gt;</msg>
+<arg>${calcul.stdout}</arg>
+<arg>${result}</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-02-22T15:44:50.093509" elapsed="0.001027"/>
+</kw>
+<status status="PASS" start="2024-02-22T15:44:50.033815" elapsed="0.060721"/>
+</test>
+<doc>Tests sur le programme de division</doc>
+<status status="PASS" start="2024-02-22T15:44:50.007079" elapsed="0.088783"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Division">Test Division</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

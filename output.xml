@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-23T13:49:39.603125" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Division" source="C:\Users\sguiheux2023\PycharmProjects\formation_robot\test_division.robot">
+<test id="s1-t1" name="factoriser le test" line="5">
+<kw name="Division simple" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.634118" level="INFO">Starting process:
+python division.py 5 2</msg>
+<msg time="2024-02-23T13:49:39.639345" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:39.688343" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:39.688343" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.634118" elapsed="0.054225"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.688343" elapsed="0.001042"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:39.689385" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.689385" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.stdout}</arg>
+<arg>${resultat}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.689385" elapsed="0.001039"/>
+</kw>
+<arg>5</arg>
+<arg>2</arg>
+<arg>2.50</arg>
+<doc>Appelle le programme de division
+avec les argument fournis</doc>
+<status status="PASS" start="2024-02-23T13:49:39.634118" elapsed="0.056306"/>
+</kw>
+<kw name="Division simple" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.691463" level="INFO">Starting process:
+python division.py 10 2</msg>
+<msg time="2024-02-23T13:49:39.695597" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:39.727169" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:39.728191" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.691463" elapsed="0.036745"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.728208" elapsed="0.002077"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:39.731321" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.730285" elapsed="0.001036"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.stdout}</arg>
+<arg>${resultat}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.731321" elapsed="0.001036"/>
+</kw>
+<arg>10</arg>
+<arg>2</arg>
+<arg>5.00</arg>
+<doc>Appelle le programme de division
+avec les argument fournis</doc>
+<status status="PASS" start="2024-02-23T13:49:39.690424" elapsed="0.041933"/>
+</kw>
+<kw name="Division simple" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.734443" level="INFO">Starting process:
+python division.py 5 3</msg>
+<msg time="2024-02-23T13:49:39.738581" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:39.766647" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:39.766647" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.734443" elapsed="0.033204"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.767762" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:39.769872" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.769872" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.stdout}</arg>
+<arg>${resultat}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.770979" elapsed="0.001003"/>
+</kw>
+<arg>5</arg>
+<arg>3</arg>
+<arg>1.67</arg>
+<doc>Appelle le programme de division
+avec les argument fournis</doc>
+<status status="PASS" start="2024-02-23T13:49:39.733399" elapsed="0.038692"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:39.633119" elapsed="0.140138"/>
+</test>
+<test id="s1-t2" name="factoriser cas euclidien" line="12">
+<kw name="Division euclidienne" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.777403" level="INFO">Starting process:
+python division.py 10 3 --reste</msg>
+<msg time="2024-02-23T13:49:39.780595" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:39.809797" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:39.809797" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<arg>--reste</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.776400" elapsed="0.033397"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.809797" elapsed="0.002117"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:39.812988" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.811914" elapsed="0.001074"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:39.814092" level="INFO">${calcul_resultat} = 3</msg>
+<var>${calcul_resultat}</var>
+<arg>${calcul.stdout}</arg>
+<arg>0</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.812988" elapsed="0.001104"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:39.815139" level="INFO">${calcul_reste} = 1.00</msg>
+<var>${calcul_reste}</var>
+<arg>${calcul.stdout}</arg>
+<arg>1</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.815139" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${resultat}</arg>
+<arg>${calcul_resultat}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.816220" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${reste}</arg>
+<arg>${calcul_reste}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.816220" elapsed="0.001061"/>
+</kw>
+<arg>10</arg>
+<arg>3</arg>
+<arg>3</arg>
+<arg>1.00</arg>
+<doc>Appelle le programme de division
+avec les argument fournis en prenant le reste en compte</doc>
+<status status="PASS" start="2024-02-23T13:49:39.775341" elapsed="0.041940"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:39.774287" elapsed="0.044026"/>
+</test>
+<test id="s1-t3" name="tableau cas eucledien" line="17">
+<kw name="Division euclidienne" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.821455" level="INFO">Starting process:
+python division.py 300 4 --reste</msg>
+<msg time="2024-02-23T13:49:39.824628" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:39.851764" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:39.851764" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<arg>--reste</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.820394" elapsed="0.031370"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.851764" elapsed="0.002101"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:39.854370" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.854370" elapsed="0.001008"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:39.856428" level="INFO">${calcul_resultat} = 75</msg>
+<var>${calcul_resultat}</var>
+<arg>${calcul.stdout}</arg>
+<arg>0</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.855424" elapsed="0.001004"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:39.857428" level="INFO">${calcul_reste} = 0.00</msg>
+<var>${calcul_reste}</var>
+<arg>${calcul.stdout}</arg>
+<arg>1</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.856851" elapsed="0.000577"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${resultat}</arg>
+<arg>${calcul_resultat}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.857428" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${reste}</arg>
+<arg>${calcul_reste}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.858477" elapsed="0.000000"/>
+</kw>
+<arg>300</arg>
+<arg>4</arg>
+<arg>75</arg>
+<arg>0.00</arg>
+<doc>Appelle le programme de division
+avec les argument fournis en prenant le reste en compte</doc>
+<status status="PASS" start="2024-02-23T13:49:39.820394" elapsed="0.038083"/>
+</kw>
+<kw name="Division euclidienne" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.860568" level="INFO">Starting process:
+python division.py 66 5 --reste</msg>
+<msg time="2024-02-23T13:49:39.864775" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:39.965832" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:39.966870" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<arg>--reste</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.860568" elapsed="0.106302"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.966870" elapsed="0.001035"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:39.968946" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.967905" elapsed="0.001041"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:39.969973" level="INFO">${calcul_resultat} = 13</msg>
+<var>${calcul_resultat}</var>
+<arg>${calcul.stdout}</arg>
+<arg>0</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.968946" elapsed="0.001027"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:39.971016" level="INFO">${calcul_reste} = 1.00</msg>
+<var>${calcul_reste}</var>
+<arg>${calcul.stdout}</arg>
+<arg>1</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.971016" elapsed="0.001003"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${resultat}</arg>
+<arg>${calcul_resultat}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.972056" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${reste}</arg>
+<arg>${calcul_reste}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.972056" elapsed="0.000000"/>
+</kw>
+<arg>66</arg>
+<arg>5</arg>
+<arg>13</arg>
+<arg>1.00</arg>
+<doc>Appelle le programme de division
+avec les argument fournis en prenant le reste en compte</doc>
+<status status="PASS" start="2024-02-23T13:49:39.859512" elapsed="0.112544"/>
+</kw>
+<kw name="Division euclidienne" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:39.973056" level="INFO">Starting process:
+python division.py 91 5 --reste</msg>
+<msg time="2024-02-23T13:49:39.979236" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.032724" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.032724" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<arg>--reste</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:39.973056" elapsed="0.059668"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.032724" elapsed="0.001040"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:40.033764" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.033764" elapsed="0.000000"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:40.034783" level="INFO">${calcul_resultat} = 18</msg>
+<var>${calcul_resultat}</var>
+<arg>${calcul.stdout}</arg>
+<arg>0</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.033764" elapsed="0.001039"/>
+</kw>
+<kw name="Get Line" owner="String">
+<msg time="2024-02-23T13:49:40.034803" level="INFO">${calcul_reste} = 1.00</msg>
+<var>${calcul_reste}</var>
+<arg>${calcul.stdout}</arg>
+<arg>1</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.034803" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${resultat}</arg>
+<arg>${calcul_resultat}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.034803" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${reste}</arg>
+<arg>${calcul_reste}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.034803" elapsed="0.000000"/>
+</kw>
+<arg>91</arg>
+<arg>5</arg>
+<arg>18</arg>
+<arg>1.00</arg>
+<doc>Appelle le programme de division
+avec les argument fournis en prenant le reste en compte</doc>
+<status status="PASS" start="2024-02-23T13:49:39.973056" elapsed="0.062786"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:39.819360" elapsed="0.216482"/>
+</test>
+<test id="s1-t4" name="test nombre entier" line="34">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.036842" level="INFO">Starting process:
+python division.py 60 15</msg>
+<msg time="2024-02-23T13:49:40.042082" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.103792" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.103792" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${60}</arg>
+<arg>${15}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.036842" elapsed="0.066950"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<arg>${calcul.stdout}</arg>
+<arg>4</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.103792" elapsed="0.001043"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:40.104835" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.104835" elapsed="0.001021"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.105877" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:40.036842" elapsed="0.069035"/>
+</test>
+<test id="s1-t5" name="test division par zero" line="40">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.107902" level="INFO">Starting process:
+python division.py 12 0</msg>
+<msg time="2024-02-23T13:49:40.113084" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.161742" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.161742" level="INFO">${calcul} = &lt;result object with rc 1&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>12</arg>
+<arg>${0}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.107902" elapsed="0.053840"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.162755" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:40.106888" elapsed="0.056877"/>
+</test>
+<test id="s1-t6" name="test nombre decimal" line="44">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.164777" level="INFO">Starting process:
+python division.py --reste 12 5</msg>
+<msg time="2024-02-23T13:49:40.169955" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.214916" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.215932" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>--reste</arg>
+<arg>${12}</arg>
+<arg>${5}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.164777" elapsed="0.051155"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.215932" elapsed="0.001059"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:40.216991" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.216991" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.stdout}</arg>
+<arg>2\n2.00</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.218002" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:40.163765" elapsed="0.054237"/>
+</test>
+<test id="s1-t7" name="test division avec un argument seulement" line="50">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.219014" level="INFO">Starting process:
+python division.py 12</msg>
+<msg time="2024-02-23T13:49:40.224162" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.272171" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.272178" level="INFO">${calcul} = &lt;result object with rc 2&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${12}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.219014" elapsed="0.053164"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.272178" elapsed="0.001041"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${calcul.stderr}</arg>
+<arg>error</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.273219" elapsed="0.000000"/>
+</kw>
+<tag>negative test</tag>
+<status status="PASS" start="2024-02-23T13:49:40.219014" elapsed="0.055205"/>
+</test>
+<test id="s1-t8" name="test division avec valeures négatives" line="56">
+<kw name="Division simple" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.275266" level="INFO">Starting process:
+python division.py -10 -5</msg>
+<msg time="2024-02-23T13:49:40.280464" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.328545" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.328545" level="INFO">${calcul} = &lt;result object with rc 0&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>${numerateur}</arg>
+<arg>${diviseur}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.275266" elapsed="0.053279"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg= Le programme a planté</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.328545" elapsed="0.001040"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2024-02-23T13:49:40.329585" level="INFO">Length is 0.</msg>
+<arg>${calcul.stderr}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.329585" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${calcul.stdout}</arg>
+<arg>${resultat}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.329585" elapsed="0.000000"/>
+</kw>
+<arg>-10</arg>
+<arg>-5</arg>
+<arg>2.00</arg>
+<doc>Appelle le programme de division
+avec les argument fournis</doc>
+<status status="PASS" start="2024-02-23T13:49:40.275266" elapsed="0.055337"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:40.274219" elapsed="0.056406"/>
+</test>
+<test id="s1-t9" name="division d'un nombre par une lettre" line="59">
+<kw name="Division en erreur" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.331623" level="INFO">Starting process:
+python division.py 5 a</msg>
+<msg time="2024-02-23T13:49:40.336860" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.395949" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.395949" level="INFO">${calcul} = &lt;result object with rc 2&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>@{prog_arguments}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.331623" elapsed="0.064326"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg=programme planté</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.395949" elapsed="0.001054"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<msg time="2024-02-23T13:49:40.397003" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${calcul.rc}</arg>
+<arg>${rc_attendu}</arg>
+<arg>msg=code retour incorrect</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.397003" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${calcul.stderr}</arg>
+<arg>${erreur_attendu}</arg>
+<arg>ignore_case=yes</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.398043" elapsed="0.000000"/>
+</kw>
+<arg>5</arg>
+<arg>a</arg>
+<arg>rc_attendu=2</arg>
+<arg>erreur_attendu= invalid float value</arg>
+<status status="PASS" start="2024-02-23T13:49:40.331623" elapsed="0.066420"/>
+</kw>
+<kw name="Division en erreur" owner="test_divvision">
+<kw name="Run Process" owner="Process">
+<msg time="2024-02-23T13:49:40.399087" level="INFO">Starting process:
+python division.py 5 2 3</msg>
+<msg time="2024-02-23T13:49:40.403215" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-02-23T13:49:40.451225" level="INFO">Process completed.</msg>
+<msg time="2024-02-23T13:49:40.451225" level="INFO">${calcul} = &lt;result object with rc 2&gt;</msg>
+<var>${calcul}</var>
+<arg>python</arg>
+<arg>division.py</arg>
+<arg>@{prog_arguments}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.399087" elapsed="0.052138"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<arg>${calcul.rc}</arg>
+<arg>${0}</arg>
+<arg>msg=programme planté</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.451225" elapsed="0.001039"/>
+</kw>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<msg time="2024-02-23T13:49:40.453303" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${calcul.rc}</arg>
+<arg>${rc_attendu}</arg>
+<arg>msg=code retour incorrect</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.452264" elapsed="0.001039"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${calcul.stderr}</arg>
+<arg>${erreur_attendu}</arg>
+<arg>ignore_case=yes</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-02-23T13:49:40.453303" elapsed="0.001036"/>
+</kw>
+<arg>5</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>rc_attendu=2</arg>
+<arg>erreur_attendu= unrecognized arguments: 3</arg>
+<status status="PASS" start="2024-02-23T13:49:40.398043" elapsed="0.056296"/>
+</kw>
+<status status="PASS" start="2024-02-23T13:49:40.331623" elapsed="0.123219"/>
+</test>
+<status status="PASS" start="2024-02-23T13:49:39.604151" elapsed="0.852763"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">negative test</stat>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="Test Division">Test Division</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
